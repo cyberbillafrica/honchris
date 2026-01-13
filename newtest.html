@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+        <title>Play and Pause Button</title>
+       <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+	<!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+	
+      <link href="css/style.css" rel="stylesheet">
+   <link href="css/images.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+    
+   </head>
+<body>
+<!-- Navbar Start -->
+       <div class="container-fluid bg-primary">
+         <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand">
+                    <h1 class=" fw-bold d-block" style="color: white;">Enugu<span class="text-right font-weight-normal" style="color: #26d48c;">OBIdients</span></h1>
+              </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="https://cyberbillafrica.github.io/honatunews" target="_blank" class="nav-item nav-link">News</a>
+                            <a href="biography.html" class="nav-item nav-link"><b>Biography</b></a>
+
+				<div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Constituency</a>
+                                <div class="dropdown-menu rounded">
+                                  <a href="about.html" class="dropdown-item">About Us</a>
+                                   <a href="achievement.html" class="dropdown-item">Achievements</a>
+                                   <a href="project.html" class="dropdown-item">Constituency Projects</a>
+                                   <a href="empowerments.html" class="dropdown-item">Constituency Empowerments</a>
+                                   <a href="media.html" class="dropdown-item">Media and Gallery</a>
+                                   <a href="support.html" class="dropdown-item">Support our Constituency</a>
+                               </div>
+                            </div>
+				
+				<div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Support Groups</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="supportreg.html" class="dropdown-item">Register Your Group</a>
+                                    <a href="groups.html" class="dropdown-item">Registered Support Groups</a>
+				    <a href="Obidient.html" class="dropdown-item">Join Enugu State OBIdient Movement(non-partisan)</a>
+                                  
+                               </div>
+                            </div>
+
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Party Politics</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="party.html" class="dropdown-item">Labour Party</a>
+                                    <a href="partyreg.html" class="dropdown-item">Join Us</a>
+                                   </div>
+                            </div>
+			   <a href="#reg" class="btn btn-secondary text-white px-2 py-2 rounded-pill custom-button1">Become OBIdient &rarr;</a>
+             		 </div>
+                    </div>
+                   <!-- <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Have any questions?</span>
+                            <span class="text-secondary">Call: +2348063785698</span> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+    
+    <audio id="audioPlayer" controls>
+        <source src="media/obidientmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<h3>OBIdient Movement Anthem</h3>
+
+	<div>
+  <a href="#reg" class="btn btn-secondary text-white px-2 py-2 custom-button1" id="playButton">Play <i class="arrow-right" style="vertical-align: middle;"></i></a>
+
+	</div>
+    <script>
+        const audio = document.getElementById("audioPlayer");
+        const playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "Pause";
+            } else {
+                audio.pause();
+                playButton.textContent = "Play";
+            }
+        });
+    </script>
+	<!-- Template Javascript -->
+        <script src="js/main.js"></script>
+	<script src="js/atunews.js"></script>
+
+</body>
+</html>
+

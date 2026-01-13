@@ -1,0 +1,1146 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #454545;
+    font-weight: 400;
+    background: #ffffff;
+}
+
+a {
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #454545;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #333333;
+    font-weight: 700;
+    
+}
+
+h1 {
+    font-weight: 900;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.credit {
+	padding: 30px 15px 0 15px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.credit a {
+	font-weight: 900;
+	color: #000000;
+	text-decoration: underline;
+}
+
+
+
+/**********************************/
+/***** Layout & Section Title *****/
+/**********************************/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .column {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.section-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 45px 0 30px 0;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background: #eeeeee;
+}
+
+.section-title h1 {
+    color: #353535;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 767.98px) {
+    .section-title h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+}
+
+@media(max-width: 567.98px) {
+    .section-title h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+/**********************************/
+/********** Effect #1 CSS *********/
+/**********************************/
+.effect-1 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-1 .effect-img {
+    font-size: 0;
+}
+
+.effect-1 .effect-img img {
+    width: 100%;
+    height: auto;
+}
+
+.effect-1 .effect-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: calc(100% - 60px);
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.effect-1:hover .effect-text {
+    top: 0;
+}
+
+.effect-1 .effect-text h2 {
+    height: 45px;
+    color: #ffffff;
+    font-size: 25px;
+    margin: -15px 0 0 0;
+    transition: .5s;
+}
+
+.effect-1:hover .effect-text h2 {
+    margin: 0;
+}
+
+.effect-1 .effect-text p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.effect-1 .effect-btn .btn {
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+}
+
+
+
+/**********************************/
+/********** Effect #2 CSS *********/
+/**********************************/
+.effect-2 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-2 .effect-img {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-2 .effect-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    bottom: -25px;
+    transition: .5s;
+}
+
+.effect-2:hover .effect-img img {
+    bottom: 0;
+}
+
+.effect-2 .effect-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+}
+
+.effect-2:hover .effect-text {
+    top: 0;
+    opacity: 1;
+}
+
+.effect-2 .effect-text p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.effect-2 .effect-btn {
+    position: absolute;
+    width: 100%;
+    padding: 15px 7.5px;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.effect-2 .effect-text h2 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    float: left;
+    margin: 5px 7.5px 0 7.5px;
+}
+
+
+.effect-2 .effect-btn .btn {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 35px;
+    padding: 7px 15px;
+    margin: 0 7.5px;
+    color: #333333;
+    background: #ffffff;
+}
+
+
+
+/**********************************/
+/********** Effect #3 CSS *********/
+/**********************************/
+.effect-3 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-3 .effect-img {
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-3 .effect-img img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+.effect-3:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-3 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.effect-3:hover .effect-text {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.effect-3 .effect-text h2 {
+    height: 45px;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+
+.effect-3 .effect-text p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.effect-3 .effect-btn .btn {
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+}
+
+
+
+/**********************************/
+/********** Effect #4 CSS *********/
+/**********************************/
+.effect-4 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-4 .effect-img {
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-4 .effect-img img {
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+
+.effect-4:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-4 .effect-text {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+
+.effect-4 .effect-text .effect-text-inner {
+    position: absolute;
+    padding: 15px;
+    z-index: 1;
+}
+
+.effect-4 .effect-text:before,
+.effect-4 .effect-text:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+
+.effect-4 .effect-text:before {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    left: -100%;
+    top: 0;
+}
+
+.effect-4 .effect-text:after {
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    left: 100%;
+    bottom: 0;
+}
+
+@-webkit-keyframes left-up {
+    0% {
+        left: 100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes right-dn {
+    0% {
+        left: -100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+
+.effect-4:hover .effect-text{
+    opacity: 1;
+}
+
+.effect-4:hover .effect-text:after,
+.effect-4:hover .effect-text:before {
+    animation-delay: .1s;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards
+}
+
+.effect-4:hover .effect-text:after {
+    animation-name: left-up;
+}
+
+.effect-4:hover .effect-text:before {
+    animation-name: right-dn;
+}
+
+.effect-4 .effect-text h2 {
+    height: 45px;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+
+.effect-4 .effect-text p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.effect-4 .effect-btn .btn {
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+}
+
+
+
+/**********************************/
+/********** Effect #5 CSS *********/
+/**********************************/
+.effect-5 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-5 * {
+    transition: .3s;
+}
+
+.effect-5 .effect-img {
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-5 .effect-img img {
+    width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.effect-5:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-5 .effect-text {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, .1);
+    border: 15px solid rgba(255, 255, 255, .1);
+    transition: .5s;
+}
+
+.effect-5 .effect-text h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 15px;
+    top: calc(50% - 13px); 
+    transition: .5s;
+}
+
+.effect-5 .effect-text p {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .1s;
+}
+
+
+.effect-5 .effect-btn .btn {
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: .2s;
+    transition-delay: .3s;
+}
+
+.effect-5:hover .effect-text {
+    background: rgba(0, 0, 0, .5);
+    border: 15px solid rgba(255, 255, 255, .5);
+}
+
+.effect-5:hover .effect-text h2 {
+    top: 0;
+}
+
+.effect-5:hover .effect-text p {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.effect-5:hover .effect-text .btn {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/**********************************/
+/********** Effect #6 CSS *********/
+/**********************************/
+.effect-6 {
+    position: relative;
+    margin-bottom: 30px;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.effect-6:hover {
+    transform: rotateY(180deg);
+}
+
+.effect-6 .effect-img {
+    position: relative;
+    font-size: 0;
+}
+
+.effect-6 .effect-img img {
+    width: 100%;
+    height: auto;
+}
+
+.effect-6 .effect-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, .1);
+    transition: .9s;
+}
+
+.effect-6 .effect-title h2 {
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.effect-6:hover .effect-title {
+    opacity: 0;
+}
+
+.effect-6 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, .7), rgba(255, 255, 255, 1));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.effect-6 .effect-text::before,
+.effect-6 .effect-text::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+}
+
+.effect-6 .effect-text::before {
+    top: 30px;
+}
+
+.effect-6 .effect-text::after {
+    bottom: 30px;
+}
+
+.effect-6 .effect-text p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
+
+/**********************************/
+/********** Effect #7 CSS *********/
+/**********************************/
+.effect-7 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-7 .effect-img {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-7 .effect-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    left: -35px;
+    transition: .5s;
+}
+
+.effect-7:hover .effect-img img {
+    transform: scale(1.2);
+    left: 0;
+}
+
+.effect-7 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.effect-7 .effect-text h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.effect-7 .effect-text h2::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    transition: .5s;
+}
+
+.effect-7 .effect-text p {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    left: calc(-100% - 30px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.effect-7 .effect-text:hover h2::after {
+    width: 100%;
+}
+
+.effect-7 .effect-text:hover p {
+    left: 0;
+    opacity: 1;
+}
+
+
+
+/**********************************/
+/********** Effect #8 CSS *********/
+/**********************************/
+.effect-8 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-8 .effect-img {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-8 .effect-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    top: -25px;
+    transition: .5s;
+}
+
+.effect-8:hover .effect-img img {
+    top: 0;
+}
+
+.effect-8 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.effect-8 .effect-text h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.effect-8 .effect-detail {
+    position: relative;
+    width: 100%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, .5);
+    border-top: 3px solid #ffffff;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.effect-8 .effect-text p {
+    color: #222222;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 0;
+    opacity: 0;
+}
+
+.effect-8 .effect-text:hover .effect-detail {
+    height: calc(100% - 45px);
+}
+
+.effect-8 .effect-text:hover .effect-detail p {
+    opacity: 1;
+}
+
+
+
+/**********************************/
+/********** Effect #9 CSS *********/
+/**********************************/
+.effect-9 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-9 .effect-img {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-9 .effect-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.effect-9:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-9 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.effect-9 .effect-text h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.effect-9 .effect-detail {
+    position: relative;
+    width: 80px;
+    height: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, .5);
+    border-top: 3px solid #ffffff;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.effect-9 .effect-text p {
+    color: #222222;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+    transition-delay: .2s;
+}
+
+.effect-9:hover .effect-detail {
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+.effect-9:hover .effect-detail p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+/**********************************/
+/********** Effect #10 CSS *********/
+/**********************************/
+.effect-10 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-10 .effect-img {
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-10 .effect-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.effect-10:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-10 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.effect-10 .effect-text h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+
+.effect-10 .effect-detail {
+    position: relative;
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+
+.effect-10 .effect-detail:before,
+.effect-10 .effect-detail:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+
+.effect-10 .effect-detail:before {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    left: -100%;
+    top: 0;
+}
+
+.effect-10 .effect-detail:after {
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    left: 100%;
+    bottom: 0;
+}
+
+@-webkit-keyframes left-up {
+    0% {
+        left: 100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes right-dn {
+    0% {
+        left: -100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+
+.effect-10:hover .effect-detail{
+    margin-top: 15px;
+    opacity: 1;
+}
+
+.effect-10:hover .effect-detail:after,
+.effect-10:hover .effect-detail:before {
+    animation-delay: .2s;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards
+}
+
+.effect-10:hover .effect-detail:after {
+    animation-name: left-up;
+}
+
+.effect-10:hover .effect-detail:before {
+    animation-name: right-dn;
+}
+
+.effect-10 .effect-text p {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+    transition-delay: .2s;
+}
+
+.effect-10:hover .effect-detail {
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+.effect-10:hover .effect-detail p {
+    opacity: 1;
+    transform: scale(1);
+}

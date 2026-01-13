@@ -1,0 +1,84 @@
+/* Define the website color scheme */
+/* Use the colors directly */
+.form-container {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #FF0000; /* Red border */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Use media queries to make the form responsive */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+/* Style the form elements */
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-element label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-element input, .form-element select {
+  padding: 10px;
+  border: 1px solid #26d48c; /* Green border */
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.form-element button {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #26d48c; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.pdf-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #FF0000; /* Red border */
+  border-radius: 5px;
+}
+
+.pdf-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #26d48c; /* Green border */
+}
+
+.pdf-item:last-child {
+  border-bottom: none;
+}
+
+.pdf-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.download-button {
+  background-color: #FF0000; /* Red background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
