@@ -744,13 +744,13 @@ footer {
 }
 
 .footer .short-link a,
-.footer .help-link a,
+.footer .Help-link a,
 .footer .contact-link a {
     transition: .5s;
 }
 
 .footer .short-link a:hover,
-.footer .help-link a:hover,
+.footer .Help-link a:hover,
 .footer .contact-link a:hover {
     letter-spacing: 1px;
 }

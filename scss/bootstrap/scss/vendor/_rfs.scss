@@ -266,7 +266,7 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
   }
 }
 
-// Shorthand helper mixins
+// Shorthand Helper mixins
 @mixin font-size($value) {
   @include rfs($value);
 }
