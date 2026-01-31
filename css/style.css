@@ -1,19 +1,30 @@
-/*** Spinner Start ***/
 
+/* Spinner Container */
 #spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Slide-up and fade-in animation */
+@keyframes slideUpFadeIn {
+  0% {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity .8s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
- }
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
-
-/*** Spinner End ***/
 
 main {
   margin-top: 20px;
@@ -386,7 +397,7 @@ blockquote.pull-right {
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/Chimared.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/adc2.jpg) center center no-repeat;
     background-size: cover;
 }
 
