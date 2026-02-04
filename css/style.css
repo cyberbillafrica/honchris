@@ -411,8 +411,25 @@ blockquote.pull-right {
     color: var(--bs-white);
 }
 
+
+.page-header.page-don-chris {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+                url(../img/donchris.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 /*** Carousel End ***/
 
+#typewriter::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 /*** Services Start ***/
 
