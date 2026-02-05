@@ -410,9 +410,10 @@ blockquote.pull-right {
     font-size: 18px;
     color: var(--bs-white);
 }
-
+   
 
 .page-header.page-don-chris {
+        min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
                 url(../img/donchris.jpg) center center no-repeat;
     background-size: cover;
