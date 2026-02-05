@@ -413,11 +413,16 @@ blockquote.pull-right {
    
 
 .page-header.page-don-chris {
-        min-height: 400px;
+  min-height: 400px;
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
                 url(../img/donchris.jpg) center center no-repeat;
     background-size: cover;
 }
+
+.page-don-chris .text-center {
+    margin-top: 120px; /* adjust this value */
+}
+
 
 /*** Carousel End ***/
 
