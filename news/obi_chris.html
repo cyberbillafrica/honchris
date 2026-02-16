@@ -253,33 +253,52 @@
                     <i class="far fa-eye me-2"></i>3,450 Views
                 </div>
 
+
                 <!-- Share -->
-                <h6 class="mt-5 mb-3 text-dark fw-bold text-uppercase">Share this Article</h6>
-                <div class="d-flex gap-3">
-                    <a class="btn btn-outline-danger btn-lg" id="twitter-share" target="_blank">
-                        <i class="fab fa-twitter me-2"></i> Twitter
-                    </a>
-                    <a class="btn btn-outline-primary btn-lg" id"facebook-share" target="_blank">
-                        <i class="fab fa-facebook-f me-1"></i> Facebook
-                    </a>
-                    <a class="btn btn-outline-success btn-lg" id="whatsapp-share" target="_blank">
-                        <i class="fab fa-whatsapp me-1"></i> WhatsApp
-                    </a>
-                </div>
+<h6 class="mt-5 mb-3 text-dark fw-bold text-uppercase">Share this Article</h6>
+<div class="d-flex gap-3">
+    <a class="btn btn-outline-dark btn-lg" id="twitter-share" target="_blank" rel="noopener">
+        <i class="fab fa-twitter me-2"></i> Twitter
+    </a>
+    <a class="btn btn-outline-primary btn-lg" id="facebook-share" target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f me-1"></i> Facebook
+    </a>
+    <a class="btn btn-outline-success btn-lg" id="whatsapp-share" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp me-1"></i> WhatsApp
+    </a>
+</div>
 
-                <script>
-                    const pageUrl = encodeURIComponent(window.location.href);
-                    const pageTitle = encodeURIComponent(
-                        "2027 Mandate of the Masses: Give Us Obi & Don Chris!"
-                    );
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
 
-                    document.getElementById("twitter-share").href =
-                        `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
-                    document.getElementById("facebook-share").href =
-                        `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-                    document.getElementById("whatsapp-share").href =
-                        `https://api.whatsapp.com/send?text=${pageTitle}: ${pageUrl}`;
-                </script>
+    const encodedUrl = encodeURIComponent(pageUrl);
+    const encodedTitle = encodeURIComponent(pageTitle);
+
+    // Twitter
+    const twitterBtn = document.getElementById("twitter-share");
+    if (twitterBtn) {
+        twitterBtn.href =
+            `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
+    }
+
+    // Facebook
+    const facebookBtn = document.getElementById("facebook-share");
+    if (facebookBtn) {
+        facebookBtn.href =
+            `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+    }
+
+    // WhatsApp (encode full message properly)
+    const whatsappBtn = document.getElementById("whatsapp-share");
+    if (whatsappBtn) {
+        const whatsappMessage = `${pageTitle} - ${pageUrl}`;
+        whatsappBtn.href =
+            `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}`;
+    }
+});
+</script>
 
             </div>
         </div>
