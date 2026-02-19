@@ -167,129 +167,82 @@ s0.parentNode.insertBefore(s1,s0);
   
 
 <!-- Create the form using HTML -->
-  <main>
-<h2><a style="color: orangered;">Registered<a style="color: #26d48c;">Groups</a></h2>
-  </main>
-<form class="form-container">
 
-    <!-- First name field -->
-    <div class="form-element">
-      <label for="first-name">Group name <a style="color: red;">*</a></label>
-      <input type="text" id="first-name" name="first-name" required>
-	</div>
-
-    <!-- Phone number field -->
-    <div class="form-element">
-      <label for="phone-number">Contact Phone number <a style="color: red;">*</a></label>
-      <input type="tel" id="phone-number" name="phone-number" required>
-    </div>
-
-     <!-- Email field -->
-     <div class="form-element">
-       <label for="email">Contact Email <a style="color: red;">*</a></label>
-       <input type="email" id="email" name="email" required>
-     </div>
-
-	  
-<!-- File Upload field -->
-<div class="form-element">
-    <label for="file">Upload PDF or DOCX:</label>
-	<class>Upload a letter requesting Incorporation addressed to the DG Don Chris Support Organization</class>
-    <input type="file" name="file" accept=".pdf,.docx">
-  </div>
-
-
-     <!-- Submit button -->
-     <div class="form-element">
-       <button type="submit">Submit</button>
-     </div>
-
-  </form>
 
       <style>
   .beautiful-table {
     width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 1000px;
+    margin: 40px auto;
     border-collapse: separate;
-    border-spacing: 0 15px; /* space between rows */
+    border-spacing: 0;
     font-family: Arial, sans-serif;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  }
+
+  .beautiful-table thead {
+    background: #f5f7fa;
   }
 
   .beautiful-table th {
     text-align: left;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #444;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
   }
 
   .beautiful-table td {
-    padding: 0 15px;
-  }
-
-  .beautiful-table input {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: 1.5px solid #ccc;
-    outline: none;
+    padding: 16px;
+    border-bottom: 1px solid #eeeeee;
     font-size: 14px;
-    transition: all 0.3s ease;
+    color: #555;
   }
 
-  .beautiful-table input:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  .beautiful-table tbody tr {
+    transition: all 0.2s ease;
   }
 
-  .submit-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s ease;
+  .beautiful-table tbody tr:hover {
+    background-color: #f9fbfd;
   }
 
-  .submit-btn:hover {
-    background-color: #43a047;
+  .beautiful-table tbody tr:last-child td {
+    border-bottom: none;
   }
 </style>
 
-<form>
-  <table class="beautiful-table">
-    <thead>
-      <tr>
-        <th>Name <span style="color:red">*</span></th>
-        <th>Contact <span style="color:red">*</span></th>
-        <th>Chairman <span style="color:red">*</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <input type="text" name="group-name" placeholder="Enter group name" required>
-        </td>
-        <td>
-          <input type="text" name="contact" placeholder="Phone or Email" required>
-        </td>
-        <td>
-          <input type="text" name="chairman" placeholder="Chairman's name" required>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="beautiful-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Chairman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unity Development Group</td>
+      <td>+234 800 123 4567 | unity@email.com</td>
+      <td>Mr. John Doe</td>
+    </tr>
+    <tr>
+      <td>Hope Builders Association</td>
+      <td>+234 801 987 6543 | hope@email.com</td>
+      <td>Mrs. Grace Smith</td>
+    </tr>
+  </tbody>
+</table>
 
-  <button type="submit" class="submit-btn">Submit</button>
-</form>
+    
 
 
 <div class="text-center">
-  <a href="party.html" class="btn btn-secondary text-white px-3 py-5 rounded-pill">Return to Party Page <i class="bi bi-arrow-up"></i></a>
+  <a href="party.html" class="btn btn-secondary text-white px-3 py-2 rounded-pill">Return to Party Page <i class="bi bi-arrow-up"></i></a>
  </div>	    
 	    
 <!-- Footer Start -->
