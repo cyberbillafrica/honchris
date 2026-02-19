@@ -243,17 +243,60 @@ main {
         </select>
      </div>
 
-     <!-- Age field -->
-     <div class="form-element">
+<div class="form-element">
        <label for="age">Age <a style="color: red;">*</a></label>
-       <input type="number" id="age" name="age" min="18" max="100" required>
-     </div>
+ <select name="age-bracket" required="required">
+    <option value="">Select Age Range *</option>
+    <option value="18-24">18-24</option>
+    <option value="25-29">25-29</option>
+    <option value="30-34">30-34</option>
+    <option value="35-39">35-39</option>
+    <option value="40-64">40-64</option>
+    <option value="65 and above">65 and Above</option>
+  </select>
+       </div>
 
+  <div class="form-element">
+    <label for="gender">Highest Education Attained <a style="color: red;">*</a></label>
+      <select name="education" required="required">
+    <option value="">Select Highest Education Attained *</option>
+    <option value="Uneducated">Uneducated</option>
+    <option value="Primary School">Primary School</option>
+    <option value="Secondary School">Secondary School</option>
+    <option value="Undergraduate">Undergraduate</option>
+    <option value="NCE/OND">NCE/OND</option>
+    <option value="BSc/HND">BSc/HND</option>
+    <option value="Post Graduate">Post Graduate</option>
+  </select>
+</div>
+
+	<div class="form-element">
+       <label for="gender">Occupation <a style="color: red;">*</a></label>
+       <select name="occupation" required="required">
+    <option value="">Select Occupation *</option>
+    <option value="Artisan (Ọrụ Aka)">Artisan (Ọrụ Aka)</option>
+    <option value="Business">Business</option>
+    <option value="Civil Servant (salary earner)">Civil Servant (salary earner)</option>
+    <option value="Farmer">Farmer</option>
+    <option value="Student">Student</option>
+    <option value="">Unemployed</option>
+    <option value="">Other</option>
+ </select>
+</div>
+    
      <!-- Occupation field -->
      <div class="form-element">
-       <label for="occupation">Occupation <a style="color: red;">*</a></label>
-       <input type="text" id="occupation" name="occupation" required>
+       <label for="occupation">Otherwise type your Occupation</label>
+       <input type="text" id="occupation" name="occupation">
      </div>
+  
+<!-- File Upload field -->
+<div class="form-element">
+    <label for="file">Upload Image</label>
+	<class>Upload an image showing your face clearly</class>
+    <input type="file" name="image" accept="image/*">
+  </div>
+
 
 	<div class="form-element">
   <select name="LGA" id="lga" class="form-control" required>
@@ -332,9 +375,9 @@ main {
   <label>Why do you want to join us? <a style="color: red;">*</a></label>
   <!-- Create a group of radio buttons with the same name -->
   <input type="radio" id="vote" name="reason" value="vote">
-  <label for="vote">Vote</label><br>
+  <label for="vote">Just to Vote</label><br>
   <input type="radio" id="membership" name="reason" value="membership">
-  <label for="membership">Membership</label><br>
+  <label for="membership">Party Membership</label><br>
   <input type="radio" id="volunteer" name="reason" value="volunteer">
   <label for="volunteer">Volunteer</label><br>
   <input type="radio" id="donate" name="reason" value="donate">
@@ -348,6 +391,7 @@ main {
      </div>
 
   </form>
+		<hr>
 
 <!-- <form class="form-container">
 
