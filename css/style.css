@@ -80,7 +80,7 @@ main {
   @keyframes bounceColorChange {
     0%, 100% {
       transform: translateY(0);
-      background-color: red; /* Initial background color */
+      background-color: orangered; /* Initial background color */
     }
     40% {
       transform: translateY(-20px); /* Adjust the bounce height */
@@ -94,7 +94,7 @@ main {
 .custom-button1 {
     padding: 10px 20px;
     color: #fff; /* Initial text color */
-    background-color: red; /* Initial background color */
+    background-color: orangered; /* Initial background color */
     border: none;
     cursor: pointer;
     animation: colorChange 2s infinite; /* Add a color change animation */
@@ -102,7 +102,7 @@ main {
 
 @keyframes colorChange {
     0%, 100% {
-        background-color: red; /* Initial background color */
+        background-color: orangered; /* Initial background color */
     }
     40% {
         background-color: #26d48c; /* Change background color */
