@@ -255,55 +255,55 @@ main {
        <input type="text" id="occupation" name="occupation" required>
      </div>
 
-	 <div class="form-element">
-       <select name="LGA" id="lga" class="form-control" required>
-    <option value="">Select your Local Government Area <a style="color: red;">*</a></option>
-    <option value="Enugu North">Enugu North</option>
-    <option value="Enugu South">Enugu South</option>
-    <!-- Add more LGAs as needed -->
+	<div class="form-element">
+  <select name="LGA" id="lga" class="form-control" required>
+    <option value="">Select your Local Government Area *</option>
+    <option value="Igboeze North">Igboeze North</option>
+    <option value="Udenu">Udenu</option>
   </select>
 </div>
 
 <div class="form-element">
- <select name="Political-ward" id="ward" class="form-control" required>
-    <option value="">Select your Ward <a style="color: red;">*</a></option>
-    <!-- Wards will be populated dynamically using JavaScript -->
+  <select name="Political-ward" id="ward" class="form-control" required>
+    <option value="">Select your Ward *</option>
   </select>
 </div>
 
-<!-- JavaScript -->
 <script>
-  // Create a mapping of LGAs to wards
   const lgaWardMapping = {
-    "Enugu North": [
-      "Ward 1 ASATA TOWNSHIP",
-      "Ward 2 UMUNEVO",
-      "Ward 3 IHEWUZI",
-      "Ward 4 ONU-ASATA",
-      "Ward 5 OGBETTE EAST",
-      "Ward 6 OGBETTE WEST",
-      "Ward 7 G.R.A",
-      "Ward 8 OGUI NEW LAYOUT",
-      "Ward 9 CHINA TOWN",
-      "Ward 10 NEW HAVEN",
-      "Ward 11 INDEPENDENCE LAYOUT",
-      "Ward 12 UDI SIDING/IVA VALLEY",
-      "Ward 13 OGUI TOWNSHIP"
+    "Igboeze North": [
+      "Essodo I",
+      "Essodo II",
+      "Essodo III",
+      "Ette I",
+      "Ette II",
+      "Ette Central",
+      "Ezzodo",
+      "UmuItodo I",
+      "UmuItodo II",
+      "UmuItodo III",
+      "Umuozzi I",
+      "Umuozzi II",
+      "Umuozzi III",
+      "Umuozzi IV",
+      "Umuozzi V",
+      "Umuozzi VI",
+      "Umuozzi VII",
+      "Umuozzi VIII",
+      "Umuozzi IX",
+      "Umuozzi X"
     ],
-    "Enugu South": [
-      "Ward 1 AMECHI I",
-      "Ward 2 AMECHI II",
-      "Ward 3 OBEAGU",
-      "Ward 4 UWANI EAST",
-      "Ward 5 UWANI WEST",
-      "Ward 6 ACHARA LAYOUT EAST",
-      "Ward 7 ACHARA LAYOUT WEST",
-      "Ward 8 AWKUNANAW EAST",
-      "Ward 9 AWKUNANAW WEST",
-      "Ward 10 UGWUAJI",
-      "Ward 11 OBEAGU II",
-      "Ward 12 AKWUKE",
-      "Ward 13 MARYLAND"
+    "Udenu": [
+      "Amala",
+      "Ezimo",
+      "Imilike",
+      "Obollo-Afor",
+      "Obollo-Etiti",
+      "Obollo-Eke",
+      "Ogbodu-Aba",
+      "Orba I",
+      "Orba II",
+      "Udunedem"
     ]
   };
 
@@ -311,14 +311,11 @@ main {
   const wardSelect = document.getElementById("ward");
 
   lgaSelect.addEventListener("change", function () {
-    const selectedLGA = lgaSelect.value;
-    // Clear current ward options
+    const selectedLGA = this.value;
     wardSelect.innerHTML = "<option value=''>Select your Ward *</option>";
 
-    // Populate the ward dropdown based on the selected LGA
     if (selectedLGA in lgaWardMapping) {
-      const wards = lgaWardMapping[selectedLGA];
-      wards.forEach((ward) => {
+      lgaWardMapping[selectedLGA].forEach(ward => {
         const option = document.createElement("option");
         option.value = ward;
         option.textContent = ward;
@@ -327,6 +324,8 @@ main {
     }
   });
 </script>
+
+
 
 	  <!-- Why do you want to join us field -->
 <div class="form-element">
